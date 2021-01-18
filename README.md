@@ -55,4 +55,4 @@ CSV File:
 
 ## Known Bugs
 ***
-* it is important to know that sometimes when you try to delete a program that you just added to the table, the program will not delete it but it will delete other programs that were already on the list.
+* It is important to know that sometimes when you try to delete a program that you just added to the table, the program will not delete it but it will delete other programs that were already on the list.
