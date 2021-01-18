@@ -1,0 +1,16 @@
+﻿.delete-title {
+    margin-top: 80px;
+    color: black;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.dt-header {
+    font-size:20px;
+    padding: 5px 5px 5px 5px;
+}
+
+.dd-text {
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+}

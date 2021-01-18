@@ -1,0 +1,108 @@
+﻿@model IEnumerable<MVC_CRUD_LIST.Models.SaitPrograms>
+
+@{ ViewBag.Title = "Home"; }
+
+<link rel="stylesheet" href="~/Content/Index.css" />
+
+@using (Html.BeginForm())
+{
+<div class="search-by">
+
+    <input class="search-box" type="text" id="programPriority" onkeyup="searchByPriority()" placeholder="Search by Priority">
+    <input class="search-box" type="text" id="programStatus" onkeyup="searchByStatus()" placeholder="Search by Status">
+
+</div>}
+<table id="progTable" class="table table-responsive">
+    <tr class="table-header-row">
+        <th>
+            Program Name
+        </th>
+        <th>
+            Program Priority
+        </th>
+        <th>
+            Program Status
+        </th>
+        <th>
+            <button class="btn btn-create">
+                @Html.ActionLink("Create New", "Create")
+            </button>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProgramName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProgramPriority)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProgramStatus)
+    </td>
+    <td>
+        <div class="btn btn-danger" style="color:white">
+            @Html.ActionLink("Delete", "Delete", new { id = item.ProgramID })
+        </div>
+    </td>
+</tr>}
+
+</table>
+
+<script>
+    function searchByPriority() {
+        
+        var filterTable,
+            tableRow, tableData,
+            i, searchNum;
+
+
+        filterTable = document.getElementById("programPriority").value.toUpperCase();
+
+        // get the all the rows for the table
+        tableRow = document.getElementById("progTable").getElementsByTagName("tr");
+
+        // Go through the data and if it doesn't match the search number (priority), row will not be shown
+        for (i = 0; i < tableRow.length; i++) {
+            tableData = tableRow[i].getElementsByTagName("td")[1];
+            if (tableData) {
+            searchNum = tableData.textContent || tableData.innerText;
+            if (searchNum.toUpperCase().indexOf(filterTable) > -1) {
+                tableRow[i].style.display = "";
+          } else {
+            tableRow[i].style.display = "none";
+          }
+        }
+      }
+    }
+
+    function searchByStatus() {
+
+        var filterTable,
+            tableRow, tableData,
+            i, searchStatus;
+
+
+        filterTable = document.getElementById("programStatus").value.toUpperCase();
+
+        // get the all the rows for the table
+        tableRow = document.getElementById("progTable").getElementsByTagName("tr");
+
+        // Go through the data and if it doesn't match the search number (priority), row will not be shown
+        for (i = 0; i < tableRow.length; i++) {
+            tableData = tableRow[i].getElementsByTagName("td")[2];
+            if (tableData) {
+                searchStatus = tableData.textContent && tableData.innerText;
+                if (searchStatus.toUpperCase().indexOf(filterTable) > -1) {
+                    tableRow[i].style.display = "";
+                } else {
+                    tableRow[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+

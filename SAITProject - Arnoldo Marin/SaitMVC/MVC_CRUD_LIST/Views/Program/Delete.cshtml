@@ -1,0 +1,53 @@
+﻿@model MVC_CRUD_LIST.Models.SaitPrograms
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<link rel="stylesheet" href="~/Content/Delete.css" />
+
+<div>
+    <h3 class="delete-title">Employee Information</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <div>
+            <dt class="dt-header">
+                Program Name:
+            </dt>
+
+            <dd class="dd-text">
+                @Html.DisplayFor(model => model.ProgramName)
+            </dd>
+        </div>
+        <div>
+            <dt class="dt-header">
+                Program Priority:
+            </dt>
+
+            <dd class="dd-text">
+                @Html.DisplayFor(model => model.ProgramPriority)
+            </dd>
+        </div>
+        <div>
+            <dt class="dt-header">
+                Program Status:
+            </dt>
+
+            <dd class="dd-text">
+                @Html.DisplayFor(model => model.ProgramStatus)
+            </dd>
+        </div>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+@Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                    <button class="btn btn-default">
+                        @Html.ActionLink("Back to List", "Index")
+                    </button>
+                </div>}
+</div>

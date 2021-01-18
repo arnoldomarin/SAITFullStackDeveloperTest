@@ -1,0 +1,21 @@
+﻿.search-box {
+    margin: 10px 0px 10px 10px;
+}
+.search-by {
+    margin-top: 80px;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+    padding: 10px;
+}
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+    padding: 10px;
+}
+#t01 th {
+    color: white;
+    background-color: #a6192e;
+    padding-top: 12px;
+    padding: 10px;
+}
