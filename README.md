@@ -19,6 +19,7 @@ A list of technologies used within the project:
 * [HTML](https://www.w3schools.com/html/)
 * [CSS](https://www.w3schools.com/css/)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/vs/)
+* [JavaScript](https://www.javascript.com/)
 
 ## Launch
 ***
