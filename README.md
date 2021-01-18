@@ -50,6 +50,9 @@ Views:
 * Create.cshtml (Views/Create.cshtml) - Contains html for the create page of the application
 * Delete.cshtml (Views/Delete.cshtml) - Contains html for the delete page of the application
 
+CSV File: 
+* FileText1.txt - contains the data of the program
+
 ## Illustrations
 ***
 
