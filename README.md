@@ -5,11 +5,11 @@
 2. [Technologies](#technologies)
 3. [Launch](#launch)
 4. [Important files](#important-files)
-4. [Illustrations](#illustrations)
+4. [Known Bugs](#known-bugs)
 
 ## General Info
 ***
-A web application that displays a list of programs at SAIT obtained from a CSV file (TextFile1.txt). The user is able to add and delete programs and those changes will be reflected in the UI and in the CSV file. The user can also search the table of programs by program Status.  
+A web application that displays a list of programs at SAIT obtained from a CSV file (TextFile1.txt). The user is able to add and delete programs and those changes will be reflected in the UI and in the CSV file. The user can also search the table of programs by program Status or by Priority. 
 
 ## Technologies
 ***
@@ -53,6 +53,6 @@ Views:
 CSV File: 
 * FileText1.txt - contains the data of the program
 
-## Illustrations
+## Known Bugs
 ***
-
+* it is important to know that sometimes when you try to delete a program that you just added to the table, the program will not delete it but it will delete other programs that were already on the list.
