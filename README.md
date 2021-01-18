@@ -27,7 +27,7 @@ A list of technologies used within the project:
 Please follow the steps for best compatibility:
 
 * Clone the repository to your local machine
-* Open project using Visual Studio 2019
+* Open project using Visual Studio 2019 by running the SAITFullStackDeveloperTest.sln file
 * Execute project with your preferred browser (green arrow)
 * Project is running and ready to perform the tasks needed!
 
