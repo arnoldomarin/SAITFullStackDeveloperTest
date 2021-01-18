@@ -4,7 +4,7 @@
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
 3. [Launch](#launch)
-4. [Important files](#important-files
+4. [Important files](#important-files)
 4. [Illustrations](#illustrations)
 
 ## General Info
